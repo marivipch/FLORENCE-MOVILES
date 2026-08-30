@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { IonInput, IonButton } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-//nsjakdnkaj
+
 @Component({
   selector: 'app-lector',
   templateUrl: './lector.component.html',
