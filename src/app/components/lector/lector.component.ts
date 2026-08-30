@@ -16,7 +16,7 @@ export class LectorComponent  implements OnInit {
   codUid: string= "";
   pruebaUid: string="60F51421";
   lecturas: Subscription;
-  ipLector: string= "http://192.168.68.121/"
+  ipLector: string= "http://10.165.41.221/"
   noPac: string = "";
   http: any;
   actualizar: any;
