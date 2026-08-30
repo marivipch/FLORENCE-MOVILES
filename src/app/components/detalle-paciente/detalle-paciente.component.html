@@ -1,0 +1,36 @@
+<div class="detalles-contenedor" *ngIf="pac">
+  <div class="campo">
+    <label>nombre</label>
+    <div class="caja-texto">{{ pac.nombre }}</div>
+  </div>
+
+  <div class="campo">
+    <label>grupo sanguineo</label>
+    <div class="caja-texto">{{ pac.rh }}</div>
+  </div>
+
+  <div class="campo">
+    <label>edad</label>
+    <div class="caja-texto">{{ pac.edad }}</div>
+  </div>
+
+  <div class="campo">
+    <label>religion</label>
+    <div class="caja-texto">{{ pac.religion }}</div>
+  </div>
+
+  <div class="campo">
+    <label>contacto de emergencia</label>
+    <div class="caja-texto">{{ pac.contEmergencia }}</div>
+  </div>
+
+  <div class="campo">
+    <label>antecedentes personales</label>
+    <div class="caja-texto area-texto">{{ pac.antPersonales }}</div>
+  </div>
+
+  <div class="campo">
+    <label>alergias</label>
+    <div class="caja-texto">{{ pac.antAlergicos }}</div>
+  </div>
+</div>

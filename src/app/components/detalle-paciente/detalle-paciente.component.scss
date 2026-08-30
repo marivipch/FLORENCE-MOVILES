@@ -1,0 +1,35 @@
+.detalles-contenedor {
+  border: 2px solid #222;
+  border-radius: 20px;
+  padding: 25px 30px;
+  width: 420px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  .campo {
+    margin-bottom: 12px;
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 4px;
+      font-size: 13px;
+      text-transform: lowercase;
+    }
+
+    .caja-texto {
+      border: 1px solid #555;
+      border-radius: 8px;
+      background: #f9f9f9;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: #333;
+      min-height: 20px;
+    }
+
+    .area-texto {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  }
+}
