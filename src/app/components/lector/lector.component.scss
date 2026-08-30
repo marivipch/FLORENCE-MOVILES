@@ -1,4 +1,4 @@
-.tarjeta-contenedor {
+.contLector {
   border: 2px solid #222;
   border-radius: 20px;
   padding: 30px;
@@ -6,40 +6,39 @@
   background: #ffffff;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
 
-  p {
-    color: #333;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
+.contLector p {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
 
-  h3 {
-    font-weight: bold;
-    color: #111;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-  }
+.contLector h3 {
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.contLector ion-input {
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
 
-  ion-input {
-    border: 1px solid #444;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    background: #f9f9f9;
-  }
+.contLector ion-button {
+  margin-top: 10px;
+  --background: #111;
+  --color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
 
-  ion-button {
-    margin-top: 10px;
-    --background: #111;
-    --color: #fff;
-    border-radius: 8px;
-    font-weight: bold;
-  }
-
-  .texto-error {
-    color: #b00020;
-    font-weight: bold;
-    margin-top: 15px;
-    font-size: 13px;
-    text-align: center;
-  }
+.contLector .txtError {
+  color: #b00020;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
 }

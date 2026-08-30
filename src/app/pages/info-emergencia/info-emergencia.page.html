@@ -6,7 +6,7 @@
 
 <ion-content [fullscreen]="true">
 
-  <div class="contenedor-principal">
+  <div class="cont1">
     <app-lector (pacEncontrado)="recibirDatos($event)"></app-lector>
     <app-detalle-paciente [pac]="pacEncontrado" *ngIf="pacEncontrado"></app-detalle-paciente>
   </div>
