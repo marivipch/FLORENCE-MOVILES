@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './detalle-paciente.component.html',
   styleUrls: ['./detalle-paciente.component.scss'],
   standalone:true,
-  imports: [CommonModule],
+  imports: [CommonModule]
 })
 export class DetallePacienteComponent  implements OnInit {
 

@@ -1,7 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef, Output, EventEmitter} from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
 import { IonInput, IonButton } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 
@@ -10,22 +9,21 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './lector.component.html',
   styleUrls: ['./lector.component.scss'],
   standalone:true,
-  imports: [CommonModule, IonInput, IonButton, FormsModule]
+  imports: [IonInput, IonButton, FormsModule]
 })
 export class LectorComponent  implements OnInit {
   codUid: string= "";
-  pruebaUid: string="60F51421";
   lecturas: Subscription;
-  ipLector: string= "http://10.165.41.221/"
+  ipLector: string= "http://10.131.33.221/"
   noPac: string = "";
   http: any;
   actualizar: any;
 
   @Output() pacEncontrado = new EventEmitter();
 
-  constructor(peticion: HttpClient, detector: ChangeDetectorRef) {
-    this.http= peticion;
-    this.actualizar= detector;
+  constructor(pet: HttpClient, detec: ChangeDetectorRef) {
+    this.http= pet;
+    this.actualizar= detec;
   }
 
   ngOnInit() {
@@ -40,14 +38,14 @@ export class LectorComponent  implements OnInit {
   }
 
   buscar() {
-    const urlApi = `http://127.0.0.1:8000/pacientes/${this.codUid}`;
+    let api = `http://127.0.0.1:8000/pacientes/${this.codUid}`;
 
-    this.http.get(urlApi).subscribe(
+    this.http.get(api).subscribe(
       (res: any) => {
         this.noPac = "";
         this.pacEncontrado.emit(res);
       },
-      (error: any) => {
+      () => {
         this.noPac = "PACIENTE NO SE ENCUENTRA EN EL SISTEMA";
         this.pacEncontrado.emit(null);
       }

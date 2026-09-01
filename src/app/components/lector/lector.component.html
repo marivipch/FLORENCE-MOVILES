@@ -1,10 +1,7 @@
 <div class="contLector">
   <p>acerque la pulsera al lector</p>
-
   <h3>UID</h3>
-  <ion-input [(ngModel)]="codUid" disabled="true" placeholder="ej:12F09A4"></ion-input>
-
-  <ion-button expand="block" (click)="buscar()">BUSCAR PACIENTE</ion-button>
-
+  <ion-input [(ngModel)]="codUid" disabled="true"></ion-input>
+  <ion-button (click)="buscar()">BUSCAR PACIENTE</ion-button>
   <p class="txtError">{{ noPac }}</p>
 </div>
