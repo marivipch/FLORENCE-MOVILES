@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 export class LectorComponent  implements OnInit {
   codUid: string= "";
   lecturas: Subscription;
-  ipLector: string= "http://10.131.33.221/"
+  ipLector: string= "http://10.128.222.221/"
   noPac: string = "";
   http: any;
   actualizar: any;

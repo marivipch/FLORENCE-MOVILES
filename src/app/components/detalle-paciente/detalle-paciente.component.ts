@@ -1,12 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import {ConsultasComponent} from '../consultas/consultas.component';
 @Component({
   selector: 'app-detalle-paciente',
   templateUrl: './detalle-paciente.component.html',
   styleUrls: ['./detalle-paciente.component.scss'],
   standalone:true,
-  imports: [CommonModule]
+  imports: [ConsultasComponent]
 })
 export class DetallePacienteComponent  implements OnInit {
 
